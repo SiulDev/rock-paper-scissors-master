@@ -1,19 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Rock Paper Scissors</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rock Paper and Scissors Game by @SiulDesing" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Rock Paper Scissors</title>
   </head>
+
   <body>
     <main class="container">
-      <h1 class="title">Rock Paper Scissors</h1>
+      <h1 class="title">ROCK PAPER SCISSORS GAME</h1>
 
       <div class="btn-wrapper">
-        <button class="btn" id="rock">&#9994;</button>
-        <button class="btn" id="paper">&#9995;</button>
-        <button class="btn" id="scissors">&#9996;</button>
+        <button class="btn" id="rock">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="65"
+            height="65"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-hand-grab">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M8 11v-3.5a1.5 1.5 0 0 1 3 0v2.5" />
+            <path d="M11 9.5v-3a1.5 1.5 0 0 1 3 0v3.5" />
+            <path d="M14 7.5a1.5 1.5 0 0 1 3 0v2.5" />
+            <path
+              d="M17 9.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+          </svg>
+        </button>
+        <button class="btn" id="paper">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="65"
+            height="65"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-article">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+            <path d="M7 8h10" />
+            <path d="M7 12h10" />
+            <path d="M7 16h10" />
+          </svg>
+        </button>
+        <button class="btn" id="scissors">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="65"
+            height="65"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-scissors">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M6 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            <path d="M6 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            <path d="M8.6 8.6l10.4 10.4" />
+            <path d="M8.6 15.4l10.4 -10.4" />
+          </svg>
+        </button>
       </div>
 
       <div class="see-score">
@@ -22,7 +84,7 @@
         <p class="see-score__p" id="losses">Losses: 0</p>
       </div>
 
-      <button class="score" id="reset">Reset Game</button>
+      <button class="reset-btn" id="reset">Reset Game</button>
     </main>
 
     <script src="js/script.js"></script>
