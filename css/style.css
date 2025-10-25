@@ -1,13 +1,21 @@
-/*VARIABLES DE COLOR*/
 :root {
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.8rem;
+  --font-size-large: 2.5rem;
+  --font-size-xl: 3rem;
+
   --clr-primary-accent: #12d6d6;
   --clr-background-main: #121212;
   --clr-background-element: #2a2a2a;
   --clr-text-main: #ffffff;
   --clr-state-win: #ffd700;
   --clr-text-secondary: #aaaaaa;
+
+  --border-main: 1px solid var(--clr-text-main);
+  --border-accent: 1px solid var(--clr-primary-accent);
+  --border-radius-main: 15px;
 }
-/*ESTILOS BASE (MOBILE FIRST - APLICAN A TODO)*/
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +40,7 @@ body {
     gap: 2rem;
 
     .title {
-      font-size: 2.5rem;
+      font-size: var(--font-size-large);
       text-align: center;
       color: var(--clr-text-main);
       text-transform: uppercase;
@@ -44,17 +52,17 @@ body {
       width: 100%;
       display: grid;
       grid-template-columns: repeat(3, 12rem);
-      grid-template-rows: 1fr; /* Una fila por defecto */
+      grid-template-rows: 1fr;
       justify-content: center;
       gap: 1.2rem;
 
       .btn {
         max-width: 200px;
         padding: 0.3rem 2.5rem;
-        font-size: 3rem;
+        font-size: var(--font-size-xl);
         background-color: var(--clr-background-element);
-        border: 1px solid var(--clr-text-main);
-        border-radius: 15px;
+        border: var(--border-main);
+        border-radius: var(--border-radius-main);
         transition: 0.3s ease-in-out;
 
         &:hover {
@@ -68,11 +76,11 @@ body {
     .reset-btn {
       margin-top: 1rem;
       padding: 0.6rem 5rem;
-      font-size: 1.2rem;
+      font-size: var(--font-size-small);
       color: var(--clr-background-element);
       background-color: var(--clr-primary-accent);
-      border: 1px solid var(--clr-primary-accent);
-      border-radius: 15px;
+      border: var(--border-accent);
+      border-radius: var(--border-radius-main);
       transition: 0.2s ease-in-out;
 
       &:hover {
@@ -90,8 +98,8 @@ body {
       gap: 2rem;
 
       .see-score__p {
+        font-size: var(--font-size-medium);
         color: white;
-        font-size: 1.8rem;
       }
     }
   }
