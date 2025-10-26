@@ -48,6 +48,45 @@ body {
       font-weight: 700;
     }
 
+    .result-display {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      margin-top: 2rem;
+      padding: 1rem;
+
+      .move-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .label {
+          font-size: var(--font-size-medium);
+          color: var(--clr-text-secondary);
+          margin-bottom: 0.5rem;
+        }
+
+        .move-icon {
+          font-size: 4rem;
+          color: var(--clr-text-main);
+        }
+      }
+
+      .vs-text {
+        font-size: var(--font-size-medium);
+        color: var(--clr-primary-accent);
+        font-weight: 700;
+      }
+    }
+
+    .result-message {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-top: 1rem;
+      color: var(--clr-state-win);
+    }
+
     .btn-wrapper {
       width: 100%;
       display: grid;

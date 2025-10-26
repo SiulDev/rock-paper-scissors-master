@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Rock Paper Scissors</title>
+    <title>Rock Paper Scissors Game</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Rock Paper and Scissors Game by @SiulDesing" />
@@ -15,7 +15,23 @@
 
   <body>
     <main class="container">
-      <h1 class="title">ROCK PAPER SCISSORS GAME</h1>
+      <h1 class="title">ROCK PAPER SCISSORS</h1>
+
+      <div class="result-display">
+        <div class="move-box">
+          <p class="label">TU JUGADA</p>
+          <span id="player-move-icon" class="move-icon">?</span>
+        </div>
+
+        <span class="vs-text">VS</span>
+
+        <div class="move-box">
+          <p class="label">IA JUGADA</p>
+          <span id="comp-move-icon" class="move-icon">?</span>
+        </div>
+      </div>
+
+      <p id="game-result-message" class="result-message"></p>
 
       <div class="btn-wrapper">
         <button class="btn" id="rock">
